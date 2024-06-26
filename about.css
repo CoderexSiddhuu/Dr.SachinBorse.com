@@ -1,0 +1,147 @@
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgb(202, 246, 255); /* Light blue */
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #143df5; /* Blue */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #2a93d5; /* Darker blue on hover */
+}
+
+.navbar a .icon {
+    margin-right: 8px;
+}
+
+.navbar a.icon {
+    float: right;
+    display: none;
+}
+
+.navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+@media screen and (max-width: 300px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* Section 1 (s1) Styles */
+.s1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: rgb(202, 246, 255); /* Light blue */
+    color: #333; /* Dark gray */
+}
+
+.s1 .contactinfo p {
+    padding: 0 15px;
+}
+
+.s1 .socialmediaicon i {
+    padding: 0 10px;
+}
+
+/* Section 2 (s2) Styles */
+.s2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(225, 252, 252); /* Light cyan */
+    padding: 10px 20px;
+}
+
+.s2 .headinglogo h1 {
+    color: rgb(255, 0, 0); /* Red */
+    font-size: 35px;
+    margin: 0;
+}
+
+@media (max-width: 425px) {
+    .s2 {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    .s2 .headinglogo h1 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .abouts1 p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .foot {
+        background-color: rgb(38, 38, 206); /* Dark blue */
+    }
+}
+
+@media (max-width: 768px) {
+    .s2 {
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+
+    .s2 .headinglogo h1 {
+        color: rgb(255, 0, 0); /* Red */
+        font-size: 25px;
+        padding: 10px;
+    }
+}
+
+/* Additional Styles for Specific Elements */
+
+.abouts1 {
+    margin: 5px 25px;
+}
+
+.abouts1 p {
+    text-align: justify;
+    font-size: 17px;
+}
+
+.allservicecard .scard9 {
+    padding: 50px 0;
+    text-align: center;
+}

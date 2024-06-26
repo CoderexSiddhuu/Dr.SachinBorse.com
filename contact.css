@@ -1,0 +1,221 @@
+/* General reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #caf6ff; /* Light blue */
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #143df5; /* Blue */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #2a93d5; /* Darker blue on hover */
+}
+
+.navbar a.icon {
+    float: right;
+    display: none;
+}
+
+.navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+@media screen and (max-width: 300px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* Section 1 styles */
+.s1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #caf6ff; /* Light blue */
+    color: #0f0f0f; /* Dark gray text */
+}
+
+.s1 .contactinfo p {
+    padding: 0 15px;
+}
+
+.s1 .socialmediaicon i {
+    padding: 0 10px;
+}
+
+/* Section 2 styles */
+.s2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e1fcfc; /* Light cyan */
+    padding: 20px;
+}
+
+.s2 .headinglogo h1 {
+    color: #ff0000; /* Red */
+    font-size: 35px;
+}
+
+/* Contact card styles */
+.contactcard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.contactcard .card1 {
+    border: 1px solid #333;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #ffffff; /* White */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactcard .card1 h1 {
+    color: #1976d2; /* Dark blue */
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contactcard .card1 p {
+    color: #555; /* Dark gray */
+    font-size: 18px;
+}
+
+/* Button styles */
+/* General reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success {
+    background-color: #4caf50; /* Green */
+    color: white;
+}
+
+.btn-danger {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .s2 {
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+    .s2 .headinglogo h1 {
+        font-size: 25px;
+        padding: 0 10px;
+    }
+
+    .contactcard {
+        grid-template-columns: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .contactcard .card1 {
+        margin: 25px 0;
+    }
+}
